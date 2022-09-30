@@ -1,0 +1,16 @@
+.test-button {
+  color: rgba(24, 218, 88, 0.664);
+  background-color: rgb(252, 175, 175);
+}
+.test-button:hover {
+  background-color: coral;
+  display: ruby;
+}
+
+.test-button:focus {
+  background-color: rgb(102, 77, 211);
+}
+.test-button:active {
+  background-color: rgb(209, 211, 77);
+  
+}
