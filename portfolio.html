@@ -28,19 +28,24 @@
       <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link" lang="en"><span>Web</span>Studio</a>
-
+  
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="item link">Контакти</li>
           </ul>
         </nav>
         <ul class="header-contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link secondary">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link secondary">
+              <svg class="icon-contacts" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link secondary">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link secondary"><svg class="icon-contacts" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -62,7 +67,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/1-portfolio-technokryak.jpg"
+                  src="./images/portfolio/1-portfolio-technokryak.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -77,7 +82,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/2-portfolio-goldenstar.jpg"
+                  src="./images/portfolio/2-portfolio-goldenstar.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -92,7 +97,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/3-portfolio-seafood.jpg"
+                  src="./images/portfolio/3-portfolio-seafood.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -107,7 +112,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/4-portfolio-prime.jpg"
+                  src="./images/portfolio/4-portfolio-prime.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -122,7 +127,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/5-portfolio-boxes.jpg"
+                  src="./images/portfolio/5-portfolio-boxes.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -137,7 +142,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/6-portfolio-inspiration.jpg"
+                  src="./images/portfolio/6-portfolio-inspiration.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -152,7 +157,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/7-portfolio-limited-ed.jpg"
+                  src="./images/portfolio/7-portfolio-limited-ed.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -167,7 +172,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/8-portfolio-lab.jpg"
+                  src="./images/portfolio/8-portfolio-lab.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -182,7 +187,7 @@
             <li class="item">
               <a href="" class="link">
                 <img
-                  src="./images/9-portfolio-growbusiness.jpg"
+                  src="./images/portfolio/9-portfolio-growbusiness.jpg"
                   alt=""
                   width="370"
                   height="294"
@@ -201,16 +206,55 @@
 
     <footer class="footer">
       <div class="footer-contacts container">
-        <a href="./index.html" class="logo secondary link" lang="en"><span>Web</span>Studio</a>
-        <address>
-          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="list">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+        <div>
+          <a href="./index.html" class="logo secondary link" lang="en"><span>Web</span>Studio</a>
+          <address>
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="list">
+              <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+              </li>
+              <li><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <h3 class="social-title">приєднуйтесь</h3>
+          <ul class="socials list">
+            <li class="socials-item">
+              <a class="footer-socials-link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram icon">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+            <li class="socials-item">
+              <a class="footer-socials-link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter icon">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="footer-socials-link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook icon">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-socials-link link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Linkedin icon">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
