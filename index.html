@@ -25,7 +25,7 @@
         <a href="./index.html" class="logo link" lang="en"><span>Web</span>Studio</a>
 
         <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+          <li class="site-menu item"><a href="./index.html" class="link current">Студія</a></li>
           <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
           <li class="item link">Контакти</li>
         </ul>
@@ -50,7 +50,7 @@
     <section class="section hero">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button data-modal-open type="button" class="hero-btn">Замовити послугу</button>
       </div>
     </section>
 
@@ -59,47 +59,49 @@
         <h2 class="visually-hidden">Особливості</h2>
         <ul class="features list">
           <li class="features-list item">
-           <div class="features-container">
-            <svg class="features-icon" width="70" height="70">
-            <use href="./images/icons.svg#icon-antenna"></use></svg>
-          </div>
-                <h3 class=" features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                  <p class="features-text">
-                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                  </p>
+            <div class="features-container">
+              <svg class="features-icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class=" features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="features-text">
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+            </p>
           </li>
           <li class="features-list item">
             <div class="features-container">
               <svg class="features-icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-clock"></use></svg>
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
             </div>
             <h3 class=" features-title">ПУНКТУАЛЬНІСТЬ</use>
-              </h3>
-              <p class="features-text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
+            </h3>
+            <p class="features-text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+            </p>
           </li>
           <li class="features-list item">
             <div class="features-container">
               <svg class="features-icon" width="70" height="70">
-              <use href="./images/icons.svg#icon-diagram"></use>
-            </svg>
-          </div>
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
             <h3 class=" features-title">ПЛАНУВАННЯ</h3>
-                <p class="features-text">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
+            <p class="features-text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
           </li>
           <li class="features-list item">
             <div class="features-container">
               <svg class="features-icon" width="70" height="70">
-              <use href="./images/icons.svg#icon-astronaut"></use>
-            </svg>
-          </div>
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <h3 class=" features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="features-text">
-                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </p>
+            <p class="features-text">
+              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+            </p>
           </li>
         </ul>
       </div>
@@ -110,13 +112,31 @@
         <h2 class="work-title">Чим ми займаємося</h2>
         <ul class="work-imgs list">
           <li class="item">
-            <img src="./images/box-1.jpg" alt="робота-1" width="370" height="294" class="img" />
+
+            <img src="./images/box-1.jpg"
+              alt="крупним планом зображення програміста, який працює за робочим столом в офісі" width="370"
+              height="294" class="img" />
+            <div class="label-overlay">
+              <p class="label-text">Десктопні додатки</p>
+            </div>
           </li>
           <li class="item">
-            <img src="./images/box-2.jpg" alt="робота-2" width="370" height="294" class="img" />
+            <img src="./images/box-2.jpg"
+              alt="дизайнери веб-інтерфейсу розробляють програми для смартфонів, команда творців працює над інтерфейсом мобільних телефонів"
+              width="370" height="294" class="img" />
+            <div class="label-overlay">
+              <p class="label-text">Мобільні додатки</p>
+            </div>
+
           </li>
           <li class="item">
-            <img src="./images/box-3.jpg" alt="робота-3" width="370" height="294" class="img" />
+
+            <img src="./images/box-3.jpg"
+              alt="творчий художник веб-дизайн із робочим графічним планшетом із вибором кольорів" width="370"
+              height="294" class="img" />
+            <div class="label-overlay">
+              <p class="label-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -340,6 +360,7 @@
     </section>
   </main>
 
+
   <footer class="footer">
     <div class="footer-contacts container">
       <div>
@@ -393,6 +414,15 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-btn" type="button" data-modal-close><svg class="icon-btn" width="18" height="18">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg></button>
+    </div>
+  </div>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
