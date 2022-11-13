@@ -251,17 +251,16 @@ p {
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
-
+  border-radius: 4px;
   cursor: pointer;
 
-  transition: color var(--animation), background-color var(--animation), box-shadow varvar(--animation);
+  transition: background-color var(--animation), box-shadow varvar(--animation);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* Особливості */
@@ -471,14 +470,14 @@ p {
   border: 1px solid var(--icons-main);
   border-radius: 4px;
 
-  transition: color var(--animation);
+  transition: color var(--animation), border var(--animation);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
- }
+}
 
 .icon-clients {
   fill: currentColor;
@@ -490,9 +489,6 @@ p {
 .filters {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
 }
 
 .filters.list {
@@ -507,9 +503,17 @@ p {
 
 .filters-item {
   padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   background-color: var(--team-bg-color);
+
+  cursor: pointer;
+
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 
@@ -518,11 +522,9 @@ p {
 .filters-item.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border-color: transparent;
 }
 
 .work-samples {
@@ -539,7 +541,6 @@ p {
 }
 
 .project-link {
-
   transition: box-shadow var(--animation);
 }
 
@@ -582,7 +583,6 @@ p {
 .project-link:hover .project-overlay {
   transform: translateY(0);
   opacity: 1;
-
 }
 
 .project-text {
@@ -606,6 +606,7 @@ p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -652,6 +653,13 @@ p {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color var(--animation);
+}
+
+.contact.link:hover,
+.contact.link:focus {
+  color: var(--accent-color);
 }
 
 .social-title {
@@ -700,34 +708,34 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(1px);
 
-  transition: opacity var(--animation);
+  transition: opacity  var(--animation);
+  opacity: 1;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
-}
+  }
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.3);
+ }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
+
   min-height: 581px;
   min-width: 528px;
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-   
-  transition: transform var(--animation), opacity var(--animation);
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -70%) ;
-  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform var(--animation);
 }
 
 .close-btn {
@@ -751,3 +759,5 @@ p {
 .icon-btn {
   fill: currentColor;
 }
+
+/* Animation */
