@@ -471,7 +471,7 @@ p {
   border: 1px solid var(--icons-main);
   border-radius: 4px;
 
-  transition: color var(--animation), border var(--animation);
+  transition: color var(--animation), border-color var(--animation);
 }
 
 .clients-link:hover,
