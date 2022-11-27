@@ -1,0 +1,35 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.hd-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.hd-contacts__link {
+    transition: color var(--animation);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.hd-contacts__icon {
+    fill: currentColor;
+}
