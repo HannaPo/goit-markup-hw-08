@@ -3,6 +3,7 @@
 }
 
 .features__list {
+    @extend %list;
     display: flex;
 
     margin-left: calc(-1 * var(--indent));

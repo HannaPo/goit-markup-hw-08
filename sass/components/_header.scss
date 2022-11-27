@@ -8,6 +8,7 @@
 }
 
 .hd-contacts {
+    @extend %list;
     display: flex;
     margin-left: auto;
     align-items: center;

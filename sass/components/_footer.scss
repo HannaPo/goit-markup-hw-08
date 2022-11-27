@@ -22,8 +22,12 @@
   font-style: normal;
 }
 
+.ft-contacts {
+@extend %list;
+}
+
 .ft-contacts__item {
-  margin-bottom: 9px;
+   margin-bottom: 9px;
 }
 
 .ft-contacts__link {
@@ -53,6 +57,7 @@
 }
 
 .ft-socials__list {
+  @extend %list;
   display: flex;
   justify-content: center;
   align-items: center;

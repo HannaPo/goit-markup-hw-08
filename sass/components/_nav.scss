@@ -4,6 +4,7 @@
 }
 
 .nav__list {
+  @extend %list;
   position: relative;
   display: flex;
   margin-left: 93px;

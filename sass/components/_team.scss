@@ -12,7 +12,8 @@
     text-align: center;
 }
 
-.team__cards {
+.team__list {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--indent));

@@ -38,6 +38,12 @@
   padding-top: 0;
 }
 
+.ft-socials__list, .ft-contacts, .projects, .filters__list, .clients__list, .socials, .team__list, .activities__list, .features__list, .nav__list, .hd-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: var(--white-color);
@@ -62,12 +68,6 @@ p {
   text-decoration: none;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .img {
@@ -387,7 +387,7 @@ p {
   text-align: center;
 }
 
-.team__cards {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

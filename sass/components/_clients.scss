@@ -12,6 +12,7 @@
 }
 
 .clients__list {
+    @extend %list;
     display: flex;
     text-align: center;
     margin-left: calc(-1 * var(--indent));
