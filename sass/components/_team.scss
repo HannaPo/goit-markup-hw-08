@@ -58,10 +58,8 @@
 
 .team-member__info {
     padding-top: 30px;
-    
-  @media screen and (max-width: 767px) {
     padding-bottom: 24px; 
-  }
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }

@@ -41,10 +41,10 @@
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform var(--animation);
+  
   @media screen and (min-width: 1200px) {
   min-width: 528px;  
   min-height: 581px;
-  
   }
 }
 
