@@ -1,45 +1,72 @@
 .features {
-    @extend %section;
+  @extend %section;
 }
 
 .features__list {
-    @extend %list;
-    display: flex;
+  @extend %list;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--indent));
-    margin-top: calc(-1 * var(--indent));
+      margin-top: calc(-1 * var(--indent));
+  }
 }
 
 .features__item {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    flex-basis: calc(100% / 2 - var(--indent));
+      margin-left: var(--indent);
+      margin-top: var(--indent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     flex-basis: calc(100% / 4 - var(--indent));
-    margin-left: var(--indent);
-    margin-top: var(--indent);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
-.features__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
+.features__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--light-bg-color);
 
-    background-color: var(--light-bg-color);
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .features__title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 
 .features__description {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: calc(24px / 14px);
+  color: var(--secondary-text-color);
 }

@@ -1,36 +1,50 @@
 .header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hd-contacts {
-    @extend %list;
-    display: flex;
+  @extend %list;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
     align-items: center;
     gap: 50px;
+  }
 }
 
 .hd-contacts__link {
-    transition: color var(--animation);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    
-    &:hover,
-    &:focus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: color var(--animation);
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-    }
+  }
 }
 
 .hd-contacts__icon {
-    fill: currentColor;
+  fill: currentColor;
 }
